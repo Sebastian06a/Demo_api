@@ -1,0 +1,79 @@
+-------------------------------------------------------------------------------
+Test set: examples.ExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.972 s <<< FAILURE! - in examples.ExamplesTest
+examples.ExamplesTest.testParallel  Time elapsed: 5.94 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/auth.feature:16
+status code was: 200, expected: 401, response time in milliseconds: 48, url: http://localhost:3000/api/members, response: 
+[{"id":1,"name":"Monil","gender":"Female"},{"id":2,"name":"Ramona","gender":"Female"},{"id":3,"name":"Lion","gender":"Male"},{"id":4,"name":"Shawn","gender":"Male"},{"id":5,"name":"Ravina","gender":"Female"},{"id":6,"name":"Ravina","gender":"Female"},{"id":7,"name":"sebasQa","gender":"Male"}]
+classpath:examples/users/auth.feature:22
+status code was: 500, expected: 201, response time in milliseconds: 51, url: http://localhost:3000/api/upload, response: 
+{"success":false,"message":{}}
+classpath:examples/users/files.feature:16
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/files.feature:34
+status code was: 404, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/api/download%3F?name=Payasito.jpg, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /api/download%3F</pre>
+</body>
+</html>
+
+classpath:examples/users/files.feature:41
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:15
+status code was: 400, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:24
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:52
+status code was: 429, expected: 200, response time in milliseconds: 3, url: http://localhost:3000/api/members?gender=Female, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:62
+status code was: 429, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members/1, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:70
+status code was: 400, expected: 201, response time in milliseconds: 3, url: http://localhost:3000/api/members, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:78
+status code was: 400, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members/1, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:86
+status code was: 400, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members/1, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:94
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members/1, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:103
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/other.feature:16
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/other.feature:32
+match failed: EQUALS
+  $ | not an array or list (MAP:STRING)
+  {"count":4,"vehicles":[{"id":1,"type":"Car","weight":1200,"color":"Black","tyres":4,"publicTransport":false},{"id":2,"type":"Bus","weight":10000,"color":"Yellow","tyres":6,"publicTransport":true},{"id":3,"type":"Bike","weight":200,"color":"Red","tyres":2,"publicTransport":false},{"id":4,"type":"Private Jet","weight":120000,"color":"White","tyres":0,"publicTransport":false}]}
+  '#array'
+
+classpath:examples/users/other.feature:49
+status code was: 429, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/authors, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/other.feature:56 ==> expected: <0> but was: <18>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="examples.ExamplesTest" time="5.972" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\sebas\IdeaProjects\Karate-apireto\target\test-classes;C:\Users\sebas\IdeaProjects\Karate-apireto\target\classes;C:\Users\sebas\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\sebas\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\sebas\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\sebas\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\sebas\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\sebas\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\sebas\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\sebas\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\sebas\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\sebas\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\sebas\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\sebas\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\sebas\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\sebas\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\sebas\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sebas\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\sebas\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\sebas\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\sebas\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\sebas\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\sebas\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\sebas\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\sebas\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\sebas\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\sebas\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\sebas\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\sebas\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\sebas\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\sebas\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\sebas\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\sebas\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\sebas\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\sebas\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\sebas\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\sebas\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\sebas\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\sebas\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\sebas\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\sebas\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\sebas\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\sebas\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sebas\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\sebas\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Lima"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PE"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\sebas\AppData\Local\Temp\surefire4487688988393702069\surefirebooter-20241209015822776_3.jar C:\Users\sebas\AppData\Local\Temp\surefire4487688988393702069 2024-12-09T01-58-22_670-jvmRun1 surefire-20241209015822776_1tmp surefire_0-20241209015822776_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\sebas\IdeaProjects\Karate-apireto\target\test-classes;C:\Users\sebas\IdeaProjects\Karate-apireto\target\classes;C:\Users\sebas\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\sebas\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\sebas\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\sebas\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\sebas\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\sebas\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\sebas\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\sebas\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\sebas\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\sebas\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\sebas\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\sebas\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\sebas\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\sebas\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\sebas\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\sebas\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sebas\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\sebas\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\sebas\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\sebas\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\sebas\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\sebas\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\sebas\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\sebas\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\sebas\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\sebas\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\sebas\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\sebas\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\sebas\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\sebas\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\sebas\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\sebas\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\sebas\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\sebas\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\sebas\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\sebas\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\sebas\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\sebas\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\sebas\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\sebas\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\sebas\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\sebas\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\sebas\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\sebas\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sebas\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\sebas\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\sebas"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\sebas\IdeaProjects\Karate-apireto"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\sebas\AppData\Local\Temp\surefire4487688988393702069\surefirebooter-20241209015822776_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.5+9-LTS-239"/>
+    <property name="user.name" value="sebas"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\sebas\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\sebas\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.5"/>
+    <property name="user.dir" value="C:\Users\sebas\IdeaProjects\Karate-apireto"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\apache-maven-3.9.8\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\sebas\AppData\Local\Microsoft\WindowsApps;C:\Users\sebas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sebas\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\sebas\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.5+9-LTS-239"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testParallel" classname="examples.ExamplesTest" time="5.94">
+    <failure message="class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader &apos;bootstrap&apos;)&#10;classpath:examples/users/auth.feature:16&#10;status code was: 200, expected: 401, response time in milliseconds: 48, url: http://localhost:3000/api/members, response: &#10;[{&quot;id&quot;:1,&quot;name&quot;:&quot;Monil&quot;,&quot;gender&quot;:&quot;Female&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Ramona&quot;,&quot;gender&quot;:&quot;Female&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;Lion&quot;,&quot;gender&quot;:&quot;Male&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;Shawn&quot;,&quot;gender&quot;:&quot;Male&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;Ravina&quot;,&quot;gender&quot;:&quot;Female&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;Ravina&quot;,&quot;gender&quot;:&quot;Female&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;sebasQa&quot;,&quot;gender&quot;:&quot;Male&quot;}]&#10;classpath:examples/users/auth.feature:22&#10;status code was: 500, expected: 201, response time in milliseconds: 51, url: http://localhost:3000/api/upload, response: &#10;{&quot;success&quot;:false,&quot;message&quot;:{}}&#10;classpath:examples/users/files.feature:16&#10;class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader &apos;bootstrap&apos;)&#10;classpath:examples/users/files.feature:34&#10;status code was: 404, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/api/download%3F?name=Payasito.jpg, response: &#10;&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot GET /api/download%3F&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;&#10;classpath:examples/users/files.feature:41&#10;status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members, response: &#10;{&quot;error&quot;:&quot;Too many requests being raised from this IP, please try again after 20 Seconds&quot;}&#10;classpath:examples/users/members.feature:15&#10;status code was: 400, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members, response: &#10;{&quot;error&quot;:&quot;Please send request in application/json content-type format only!!!&quot;}&#10;classpath:examples/users/members.feature:24&#10;status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members, response: &#10;{&quot;error&quot;:&quot;Too many requests being raised from this IP, please try again after 20 Seconds&quot;}&#10;classpath:examples/users/members.feature:52&#10;status code was: 429, expected: 200, response time in milliseconds: 3, url: http://localhost:3000/api/members?gender=Female, response: &#10;{&quot;error&quot;:&quot;Too many requests being raised from this IP, please try again after 20 Seconds&quot;}&#10;classpath:examples/users/members.feature:62&#10;status code was: 429, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members/1, response: &#10;{&quot;error&quot;:&quot;Too many requests being raised from this IP, please try again after 20 Seconds&quot;}&#10;classpath:examples/users/members.feature:70&#10;status code was: 400, expected: 201, response time in milliseconds: 3, url: http://localhost:3000/api/members, response: &#10;{&quot;error&quot;:&quot;Please send request in application/json content-type format only!!!&quot;}&#10;classpath:examples/users/members.feature:78&#10;status code was: 400, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members/1, response: &#10;{&quot;error&quot;:&quot;Please send request in application/json content-type format only!!!&quot;}&#10;classpath:examples/users/members.feature:86&#10;status code was: 400, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members/1, response: &#10;{&quot;error&quot;:&quot;Please send request in application/json content-type format only!!!&quot;}&#10;classpath:examples/users/members.feature:94&#10;status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members/1, response: &#10;{&quot;error&quot;:&quot;Too many requests being raised from this IP, please try again after 20 Seconds&quot;}&#10;classpath:examples/users/members.feature:103&#10;class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader &apos;bootstrap&apos;)&#10;classpath:examples/users/other.feature:16&#10;class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader &apos;bootstrap&apos;)&#10;classpath:examples/users/other.feature:32&#10;match failed: EQUALS&#10;  $ | not an array or list (MAP:STRING)&#10;  {&quot;count&quot;:4,&quot;vehicles&quot;:[{&quot;id&quot;:1,&quot;type&quot;:&quot;Car&quot;,&quot;weight&quot;:1200,&quot;color&quot;:&quot;Black&quot;,&quot;tyres&quot;:4,&quot;publicTransport&quot;:false},{&quot;id&quot;:2,&quot;type&quot;:&quot;Bus&quot;,&quot;weight&quot;:10000,&quot;color&quot;:&quot;Yellow&quot;,&quot;tyres&quot;:6,&quot;publicTransport&quot;:true},{&quot;id&quot;:3,&quot;type&quot;:&quot;Bike&quot;,&quot;weight&quot;:200,&quot;color&quot;:&quot;Red&quot;,&quot;tyres&quot;:2,&quot;publicTransport&quot;:false},{&quot;id&quot;:4,&quot;type&quot;:&quot;Private Jet&quot;,&quot;weight&quot;:120000,&quot;color&quot;:&quot;White&quot;,&quot;tyres&quot;:0,&quot;publicTransport&quot;:false}]}&#10;  &apos;#array&apos;&#10;&#10;classpath:examples/users/other.feature:49&#10;status code was: 429, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/authors, response: &#10;{&quot;error&quot;:&quot;Too many requests being raised from this IP, please try again after 20 Seconds&quot;}&#10;classpath:examples/users/other.feature:56 ==&gt; expected: &lt;0&gt; but was: &lt;18&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/auth.feature:16
+status code was: 200, expected: 401, response time in milliseconds: 48, url: http://localhost:3000/api/members, response: 
+[{"id":1,"name":"Monil","gender":"Female"},{"id":2,"name":"Ramona","gender":"Female"},{"id":3,"name":"Lion","gender":"Male"},{"id":4,"name":"Shawn","gender":"Male"},{"id":5,"name":"Ravina","gender":"Female"},{"id":6,"name":"Ravina","gender":"Female"},{"id":7,"name":"sebasQa","gender":"Male"}]
+classpath:examples/users/auth.feature:22
+status code was: 500, expected: 201, response time in milliseconds: 51, url: http://localhost:3000/api/upload, response: 
+{"success":false,"message":{}}
+classpath:examples/users/files.feature:16
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/files.feature:34
+status code was: 404, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/api/download%3F?name=Payasito.jpg, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /api/download%3F</pre>
+</body>
+</html>
+
+classpath:examples/users/files.feature:41
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:15
+status code was: 400, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:24
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:52
+status code was: 429, expected: 200, response time in milliseconds: 3, url: http://localhost:3000/api/members?gender=Female, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:62
+status code was: 429, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members/1, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:70
+status code was: 400, expected: 201, response time in milliseconds: 3, url: http://localhost:3000/api/members, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:78
+status code was: 400, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members/1, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:86
+status code was: 400, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members/1, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:94
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members/1, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:103
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/other.feature:16
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/other.feature:32
+match failed: EQUALS
+  $ | not an array or list (MAP:STRING)
+  {"count":4,"vehicles":[{"id":1,"type":"Car","weight":1200,"color":"Black","tyres":4,"publicTransport":false},{"id":2,"type":"Bus","weight":10000,"color":"Yellow","tyres":6,"publicTransport":true},{"id":3,"type":"Bike","weight":200,"color":"Red","tyres":2,"publicTransport":false},{"id":4,"type":"Private Jet","weight":120000,"color":"White","tyres":0,"publicTransport":false}]}
+  '#array'
+
+classpath:examples/users/other.feature:49
+status code was: 429, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/authors, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/other.feature:56 ==> expected: <0> but was: <18>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[01:58:24.363 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+01:58:24.379 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+01:58:25.469 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.469 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.469 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.469 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.469 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.720 [pool-2-thread-4] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="name"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 12
+Completed: true
+IsInMemory: true
+01:58:25.721 [pool-2-thread-5] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="name"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 12
+Completed: true
+IsInMemory: true
+01:58:25.844 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/api/upload
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Content-Type: multipart/form-data; boundary=2ef5db4a42489439
+1 > Content-Length: 350717
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="Payasito.jpg"
+content-type: image/jpeg; charset=UTF-8
+content-length: 350374
+Completed: true
+IsInMemory: false
+RealFile: C:\Users\sebas\IdeaProjects\Karate-apireto\target\test-classes\examples\users\Payasito.jpg DeleteAfter: false
+
+content-disposition: form-data; name="name"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 12
+Completed: true
+IsInMemory: true
+
+
+01:58:25.844 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/members
+1 > Authorization: Basic d3Jvbmc6d3Jvbmc=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.844 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/api/upload
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Content-Type: multipart/form-data; boundary=f00b2cfa6956c32e
+1 > Content-Length: 164
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+content-disposition: form-data; name="name"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 12
+Completed: true
+IsInMemory: true
+
+
+01:58:25.844 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/members
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.844 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/members
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.898 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 48
+1 < 200
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 0
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 293
+1 < ETag: W/"125-rJpePHGY+Yd1Eu/OHIfM6xE8aS4"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+[{"id":1,"name":"Monil","gender":"Female"},{"id":2,"name":"Ramona","gender":"Female"},{"id":3,"name":"Lion","gender":"Male"},{"id":4,"name":"Shawn","gender":"Male"},{"id":5,"name":"Ravina","gender":"Female"},{"id":6,"name":"Ravina","gender":"Female"},{"id":7,"name":"sebasQa","gender":"Male"}]
+
+01:58:25.898 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 51
+1 < 500
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 30
+1 < ETag: W/"1e-hswfsQMAtfMN0ARoUMgucwiPvYk"
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"success":false,"message":{}}
+
+01:58:25.898 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 48
+1 < 200
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 1
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 293
+1 < ETag: W/"125-rJpePHGY+Yd1Eu/OHIfM6xE8aS4"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+[{"id":1,"name":"Monil","gender":"Female"},{"id":2,"name":"Ramona","gender":"Female"},{"id":3,"name":"Lion","gender":"Male"},{"id":4,"name":"Shawn","gender":"Male"},{"id":5,"name":"Ravina","gender":"Female"},{"id":6,"name":"Ravina","gender":"Female"},{"id":7,"name":"sebasQa","gender":"Male"}]
+
+01:58:25.898 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 50
+1 < 401
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < WWW-Authenticate: Basic realm="401"
+1 < Content-Length: 24
+1 < ETag: W/"18-gH7/fIZxPCVRh6TuPVNAgHt/40I"
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"unauthorized"}
+
+01:58:25.899 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 55
+1 < 201
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 133
+1 < ETag: W/"85-tGccdkT4pOpZVbcBC5qaVm62kv4"
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"name":"Payasito.jpg","success":true,"message":"File uploaded successfully!","url":"http://localhost:5002/fileuploads/Payasito.jpg"}
+
+01:58:25.924 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.935 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/users/files.feature:16
+Then status 201
+status code was: 500, expected: 201, response time in milliseconds: 51, url: http://localhost:3000/api/upload, response: 
+{"success":false,"message":{}}
+classpath:examples/users/files.feature:16
+01:58:25.935 [pool-2-thread-2] ERROR com.intuit.karate - classpath:examples/users/auth.feature:22
+Then status 401
+status code was: 200, expected: 401, response time in milliseconds: 48, url: http://localhost:3000/api/members, response: 
+[{"id":1,"name":"Monil","gender":"Female"},{"id":2,"name":"Ramona","gender":"Female"},{"id":3,"name":"Lion","gender":"Male"},{"id":4,"name":"Shawn","gender":"Male"},{"id":5,"name":"Ravina","gender":"Female"},{"id":6,"name":"Ravina","gender":"Female"},{"id":7,"name":"sebasQa","gender":"Male"}]
+classpath:examples/users/auth.feature:22
+01:58:25.939 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/download%3F?name=Payasito.jpg
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.948 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 404
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'none'
+1 < X-Content-Type-Options: nosniff
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 154
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /api/download%3F</pre>
+</body>
+</html>
+
+
+01:58:25.951 [pool-2-thread-3] ERROR com.intuit.karate - classpath:examples/users/files.feature:41
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/api/download%3F?name=Payasito.jpg, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /api/download%3F</pre>
+</body>
+</html>
+
+classpath:examples/users/files.feature:41
+01:58:25.954 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.954 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.956 [pool-2-thread-5] ERROR com.intuit.karate - classpath:examples/users/files.feature:34
+And match response != '#empty'
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/files.feature:34
+01:58:25.956 [pool-2-thread-1] ERROR com.intuit.karate - classpath:examples/users/auth.feature:16
+And match response == '#notEmpty'
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/auth.feature:16
+01:58:25.958 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.963 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/members
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.963 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/members
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.967 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 429
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 0
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Retry-After: 20
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 90
+1 < ETag: W/"5a-t/9yHfGdyDBXrmqbvzabpvkOJ4o"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+
+01:58:25.967 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.967 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.969 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 429
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 0
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Retry-After: 20
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 90
+1 < ETag: W/"5a-t/9yHfGdyDBXrmqbvzabpvkOJ4o"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+
+01:58:25.970 [pool-2-thread-2] ERROR com.intuit.karate - classpath:examples/users/members.feature:15
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:15
+01:58:25.971 [pool-2-thread-3] ERROR com.intuit.karate - classpath:examples/users/members.feature:52
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:52
+01:58:25.975 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/members/1
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.975 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/members?gender=Female
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.976 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/api/members
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"name":"SebasQA","gender":"Male"}
+
+01:58:25.978 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.978 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.979 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 429
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 0
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Retry-After: 20
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 90
+1 < ETag: W/"5a-t/9yHfGdyDBXrmqbvzabpvkOJ4o"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+
+01:58:25.980 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 429
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 0
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Retry-After: 20
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 90
+1 < ETag: W/"5a-t/9yHfGdyDBXrmqbvzabpvkOJ4o"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+
+01:58:25.981 [pool-2-thread-5] ERROR com.intuit.karate - classpath:examples/users/members.feature:62
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 3, url: http://localhost:3000/api/members?gender=Female, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:62
+01:58:25.982 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 400
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 79
+1 < ETag: W/"4f-LgsLXv+6mz0GzBuYKQFyyUfIiFI"
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Please send request in application/json content-type format only!!!"}
+
+01:58:25.982 [pool-2-thread-1] ERROR com.intuit.karate - classpath:examples/users/members.feature:70
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members/1, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:70
+01:58:25.984 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/users/members.feature:24
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:24
+01:58:25.985 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/api/members
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 36
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","gender":"Male"}
+
+01:58:25.986 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:3000/api/members/1
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Updated Name","gender":"Male"}
+
+01:58:25.988 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.988 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.989 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 400
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 79
+1 < ETag: W/"4f-LgsLXv+6mz0GzBuYKQFyyUfIiFI"
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Please send request in application/json content-type format only!!!"}
+
+01:58:25.990 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 400
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 79
+1 < ETag: W/"4f-LgsLXv+6mz0GzBuYKQFyyUfIiFI"
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Please send request in application/json content-type format only!!!"}
+
+01:58:25.991 [pool-2-thread-2] ERROR com.intuit.karate - classpath:examples/users/members.feature:78
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 3, url: http://localhost:3000/api/members, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:78
+01:58:25.992 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.992 [pool-2-thread-3] ERROR com.intuit.karate - classpath:examples/users/members.feature:86
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members/1, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:86
+01:58:25.995 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:3000/api/members/1
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.996 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > PATCH http://localhost:3000/api/members/1
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 23
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Patched Name"}
+
+01:58:26.000 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 429
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 0
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Retry-After: 20
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 90
+1 < ETag: W/"5a-t/9yHfGdyDBXrmqbvzabpvkOJ4o"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+
+01:58:26.001 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:26.001 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:26.001 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/sendheader
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > ChannelName: qa box lets test
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:26.002 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 400
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 79
+1 < ETag: W/"4f-LgsLXv+6mz0GzBuYKQFyyUfIiFI"
+1 < Date: Mon, 09 Dec 2024 06:58:26 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Please send request in application/json content-type format only!!!"}
+
+01:58:26.003 [pool-2-thread-1] ERROR com.intuit.karate - classpath:examples/users/members.feature:103
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members/1, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:103
+01:58:26.005 [pool-2-thread-5] ERROR com.intuit.karate - classpath:examples/users/members.feature:94
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members/1, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:94
+01:58:26.005 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 200
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 54
+1 < ETag: W/"36-JZS1moaeHRpL1WvDmk+MuzLCEE0"
+1 < Date: Mon, 09 Dec 2024 06:58:26 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"channelname":"You are watching  - QA BOX LETS TEST"}
+
+01:58:26.009 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/sendheader
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > channelName: qa box lets test
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:26.010 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/users/other.feature:16
+And match response != '#empty'
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/other.feature:16
+01:58:26.010 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:26.010 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:26.015 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 200
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 54
+1 < ETag: W/"36-JZS1moaeHRpL1WvDmk+MuzLCEE0"
+1 < Date: Mon, 09 Dec 2024 06:58:26 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"channelname":"You are watching  - QA BOX LETS TEST"}
+
+01:58:26.019 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/vehicles
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:26.020 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:26.020 [pool-2-thread-3] ERROR com.intuit.karate - classpath:examples/users/other.feature:32
+And match response != '#empty'
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/other.feature:32
+01:58:26.023 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 200
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 377
+1 < ETag: W/"179-sK50E6hypeKNVtzw5VWhCwnmYkY"
+1 < Date: Mon, 09 Dec 2024 06:58:26 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"count":4,"vehicles":[{"id":1,"type":"Car","weight":1200,"color":"Black","tyres":4,"publicTransport":false},{"id":2,"type":"Bus","weight":10000,"color":"Yellow","tyres":6,"publicTransport":true},{"id":3,"type":"Bike","weight":200,"color":"Red","tyres":2,"publicTransport":false},{"id":4,"type":"Private Jet","weight":120000,"color":"White","tyres":0,"publicTransport":false}]}
+
+01:58:26.027 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/lag?delay=2000
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:26.027 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/authors
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:26.027 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/lag?delay=3000
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:26.029 [pool-2-thread-5] ERROR com.intuit.karate - classpath:examples/users/other.feature:49
+And match response == '#array'
+match failed: EQUALS
+  $ | not an array or list (MAP:STRING)
+  {"count":4,"vehicles":[{"id":1,"type":"Car","weight":1200,"color":"Black","tyres":4,"publicTransport":false},{"id":2,"type":"Bus","weight":10000,"color":"Yellow","tyres":6,"publicTransport":true},{"id":3,"type":"Bike","weight":200,"color":"Red","tyres":2,"publicTransport":false},{"id":4,"type":"Private Jet","weight":120000,"color":"White","tyres":0,"publicTransport":false}]}
+  '#array'
+
+classpath:examples/users/other.feature:49
+01:58:26.033 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 429
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 0
+1 < Date: Mon, 09 Dec 2024 06:58:26 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Retry-After: 20
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 90
+1 < ETag: W/"5a-t/9yHfGdyDBXrmqbvzabpvkOJ4o"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+
+01:58:26.035 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/users/other.feature:56
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/authors, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/other.feature:56
+---------------------------------------------------------
+feature: classpath:examples/users/auth.feature
+scenarios:  3 | passed:  1 | failed:  2 | time: 1.2616
+---------------------------------------------------------
+
+01:58:26.810 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 4 (3 remaining) classpath:examples/users/auth.feature
+---------------------------------------------------------
+feature: classpath:examples/users/files.feature
+scenarios:  3 | passed:  0 | failed:  3 | time: 0.8828
+---------------------------------------------------------
+
+01:58:26.951 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (2 remaining) classpath:examples/users/files.feature
+---------------------------------------------------------
+feature: classpath:examples/users/members.feature
+scenarios:  9 | passed:  0 | failed:  9 | time: 0.1231
+---------------------------------------------------------
+
+01:58:27.202 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 4 (1 remaining) classpath:examples/users/members.feature
+01:58:28.042 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 2015
+1 < 200
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 45
+1 < ETag: W/"2d-XNW9mcRIFeCPFF41d/NvxXcuQL8"
+1 < Date: Mon, 09 Dec 2024 06:58:28 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"msg":"Intentional Delayed Response - 2000"}
+
+01:58:29.039 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 3012
+1 < 200
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 45
+1 < ETag: W/"2d-EgEmqjjK1kboLLjR26pfN5S7Ud0"
+1 < Date: Mon, 09 Dec 2024 06:58:29 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"msg":"Intentional Delayed Response - 3000"}
+
+---------------------------------------------------------
+feature: classpath:examples/users/other.feature
+scenarios:  6 | passed:  2 | failed:  4 | time: 5.1373
+---------------------------------------------------------
+
+01:58:29.128 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 4 (0 remaining) classpath:examples/users/other.feature
+Karate version: 1.5.0
+======================================================
+elapsed:   5.43 | threads:    5 | thread time: 7.41 
+features:     4 | skipped:    0 | efficiency: 0.27
+scenarios:   21 | passed:     3 | failed: 18
+======================================================
+>>> failed features:
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/auth.feature:16
+status code was: 200, expected: 401, response time in milliseconds: 48, url: http://localhost:3000/api/members, response: 
+[{"id":1,"name":"Monil","gender":"Female"},{"id":2,"name":"Ramona","gender":"Female"},{"id":3,"name":"Lion","gender":"Male"},{"id":4,"name":"Shawn","gender":"Male"},{"id":5,"name":"Ravina","gender":"Female"},{"id":6,"name":"Ravina","gender":"Female"},{"id":7,"name":"sebasQa","gender":"Male"}]
+classpath:examples/users/auth.feature:22
+status code was: 500, expected: 201, response time in milliseconds: 51, url: http://localhost:3000/api/upload, response: 
+{"success":false,"message":{}}
+classpath:examples/users/files.feature:16
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/files.feature:34
+status code was: 404, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/api/download%3F?name=Payasito.jpg, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /api/download%3F</pre>
+</body>
+</html>
+
+classpath:examples/users/files.feature:41
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:15
+status code was: 400, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:24
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:52
+status code was: 429, expected: 200, response time in milliseconds: 3, url: http://localhost:3000/api/members?gender=Female, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:62
+status code was: 429, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members/1, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:70
+status code was: 400, expected: 201, response time in milliseconds: 3, url: http://localhost:3000/api/members, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:78
+status code was: 400, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members/1, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:86
+status code was: 400, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members/1, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:94
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members/1, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:103
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/other.feature:16
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/other.feature:32
+match failed: EQUALS
+  $ | not an array or list (MAP:STRING)
+  {"count":4,"vehicles":[{"id":1,"type":"Car","weight":1200,"color":"Black","tyres":4,"publicTransport":false},{"id":2,"type":"Bus","weight":10000,"color":"Yellow","tyres":6,"publicTransport":true},{"id":3,"type":"Bike","weight":200,"color":"Red","tyres":2,"publicTransport":false},{"id":4,"type":"Private Jet","weight":120000,"color":"White","tyres":0,"publicTransport":false}]}
+  '#array'
+
+classpath:examples/users/other.feature:49
+status code was: 429, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/authors, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/other.feature:56
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0
+file:///C:/Users/sebas/IdeaProjects/Karate-apireto/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

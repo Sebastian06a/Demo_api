@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"examples\/users\/auth[1:11]","start":1733727505294,"end":1733727505955,"title":"examples\/users\/auth[1:11] 01:58:25.294-01:58:25.955 Probar credenciales inválidas","className":"failed"},{"id":2,"group":2,"content":"examples\/users\/auth[2:19]","start":1733727505294,"end":1733727505935,"title":"examples\/users\/auth[2:19] 01:58:25.294-01:58:25.935 Probar autenticación faltante","className":"failed"},{"id":3,"group":3,"content":"examples\/users\/auth[3:26]","start":1733727505294,"end":1733727505910,"title":"examples\/users\/auth[3:26] 01:58:25.294-01:58:25.910 Probar credenciales válidas"},{"id":4,"group":4,"content":"examples\/users\/files[1:11]","start":1733727505294,"end":1733727505935,"title":"examples\/users\/files[1:11] 01:58:25.294-01:58:25.935 Subir y descargar archivo","className":"failed"},{"id":5,"group":5,"content":"examples\/users\/files[2:28]","start":1733727505294,"end":1733727505955,"title":"examples\/users\/files[2:28] 01:58:25.294-01:58:25.955 Subir archivo","className":"failed"},{"id":6,"group":3,"content":"examples\/users\/files[3:37]","start":1733727505921,"end":1733727505950,"title":"examples\/users\/files[3:37] 01:58:25.921-01:58:25.950 Descargar archivo","className":"failed"},{"id":7,"group":2,"content":"examples\/users\/members[1:12]","start":1733727505952,"end":1733727505969,"title":"examples\/users\/members[1:12] 01:58:25.952-01:58:25.969 Obtener todos los miembros debe devolver 200","className":"failed"},{"id":8,"group":4,"content":"examples\/users\/members[2:19]","start":1733727505952,"end":1733727505983,"title":"examples\/users\/members[2:19] 01:58:25.952-01:58:25.983 Flujo completo de CRUD de miembros","className":"failed"},{"id":9,"group":3,"content":"examples\/users\/members[3:49]","start":1733727505957,"end":1733727505970,"title":"examples\/users\/members[3:49] 01:58:25.957-01:58:25.970 Obtener todos los miembros","className":"failed"},{"id":10,"group":5,"content":"examples\/users\/members[4:58]","start":1733727505965,"end":1733727505980,"title":"examples\/users\/members[4:58] 01:58:25.965-01:58:25.980 Filtrar miembros por género","className":"failed"},{"id":11,"group":1,"content":"examples\/users\/members[5:67]","start":1733727505965,"end":1733727505981,"title":"examples\/users\/members[5:67] 01:58:25.965-01:58:25.981 Obtener miembro por ID","className":"failed"},{"id":12,"group":2,"content":"examples\/users\/members[6:74]","start":1733727505977,"end":1733727505991,"title":"examples\/users\/members[6:74] 01:58:25.977-01:58:25.991 Crear nuevo miembro","className":"failed"},{"id":13,"group":3,"content":"examples\/users\/members[7:82]","start":1733727505977,"end":1733727505992,"title":"examples\/users\/members[7:82] 01:58:25.977-01:58:25.992 Actualizar miembro via PUT","className":"failed"},{"id":14,"group":5,"content":"examples\/users\/members[8:90]","start":1733727505987,"end":1733727506004,"title":"examples\/users\/members[8:90] 01:58:25.987-01:58:26.004 Actualizar parcialmente miembro via PATCH","className":"failed"},{"id":15,"group":1,"content":"examples\/users\/members[9:100]","start":1733727505988,"end":1733727506003,"title":"examples\/users\/members[9:100] 01:58:25.988-01:58:26.003 Eliminar miembro","className":"failed"},{"id":16,"group":4,"content":"examples\/users\/other[1:11]","start":1733727505991,"end":1733727506009,"title":"examples\/users\/other[1:11] 01:58:25.991-01:58:26.009 Probar requisito de encabezado obligatorio","className":"failed"},{"id":17,"group":2,"content":"examples\/users\/other[2:19]","start":1733727506000,"end":1733727508041,"title":"examples\/users\/other[2:19] 01:58:26.000-01:58:28.041 Probar respuesta retrasada"},{"id":18,"group":3,"content":"examples\/users\/other[3:27]","start":1733727506000,"end":1733727506020,"title":"examples\/users\/other[3:27] 01:58:26.000-01:58:26.020 Probar requisito de encabezado","className":"failed"},{"id":19,"group":1,"content":"examples\/users\/other[4:36]","start":1733727506010,"end":1733727509038,"title":"examples\/users\/other[4:36] 01:58:26.010-01:58:29.038 Probar respuesta retrasada"},{"id":20,"group":5,"content":"examples\/users\/other[5:45]","start":1733727506010,"end":1733727506028,"title":"examples\/users\/other[5:45] 01:58:26.010-01:58:26.028 Obtener todos los vehículos","className":"failed"},{"id":21,"group":4,"content":"examples\/users\/other[6:53]","start":1733727506019,"end":1733727506035,"title":"examples\/users\/other[6:53] 01:58:26.019-01:58:26.035 Obtener todos los autores","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

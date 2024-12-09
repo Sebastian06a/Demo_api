@@ -1,0 +1,673 @@
+01:58:24.363 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+01:58:24.379 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+01:58:25.469 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.469 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.469 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.469 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.469 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.720 [pool-2-thread-4] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="name"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 12
+Completed: true
+IsInMemory: true
+01:58:25.721 [pool-2-thread-5] DEBUG c.i.karate.http.MultiPartBuilder - multipart: content-disposition: form-data; name="name"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 12
+Completed: true
+IsInMemory: true
+01:58:25.844 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/api/upload
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Content-Type: multipart/form-data; boundary=2ef5db4a42489439
+1 > Content-Length: 350717
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="Payasito.jpg"
+content-type: image/jpeg; charset=UTF-8
+content-length: 350374
+Completed: true
+IsInMemory: false
+RealFile: C:\Users\sebas\IdeaProjects\Karate-apireto\target\test-classes\examples\users\Payasito.jpg DeleteAfter: false
+
+content-disposition: form-data; name="name"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 12
+Completed: true
+IsInMemory: true
+
+
+01:58:25.844 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/members
+1 > Authorization: Basic d3Jvbmc6d3Jvbmc=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.844 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/api/upload
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Content-Type: multipart/form-data; boundary=f00b2cfa6956c32e
+1 > Content-Length: 164
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+content-disposition: form-data; name="name"; filename=""
+content-type: text/plain; charset=UTF-8
+content-length: 12
+Completed: true
+IsInMemory: true
+
+
+01:58:25.844 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/members
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.844 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/members
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.898 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 48
+1 < 200
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 0
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 293
+1 < ETag: W/"125-rJpePHGY+Yd1Eu/OHIfM6xE8aS4"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+[{"id":1,"name":"Monil","gender":"Female"},{"id":2,"name":"Ramona","gender":"Female"},{"id":3,"name":"Lion","gender":"Male"},{"id":4,"name":"Shawn","gender":"Male"},{"id":5,"name":"Ravina","gender":"Female"},{"id":6,"name":"Ravina","gender":"Female"},{"id":7,"name":"sebasQa","gender":"Male"}]
+
+01:58:25.898 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 51
+1 < 500
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 30
+1 < ETag: W/"1e-hswfsQMAtfMN0ARoUMgucwiPvYk"
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"success":false,"message":{}}
+
+01:58:25.898 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 48
+1 < 200
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 1
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 293
+1 < ETag: W/"125-rJpePHGY+Yd1Eu/OHIfM6xE8aS4"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+[{"id":1,"name":"Monil","gender":"Female"},{"id":2,"name":"Ramona","gender":"Female"},{"id":3,"name":"Lion","gender":"Male"},{"id":4,"name":"Shawn","gender":"Male"},{"id":5,"name":"Ravina","gender":"Female"},{"id":6,"name":"Ravina","gender":"Female"},{"id":7,"name":"sebasQa","gender":"Male"}]
+
+01:58:25.898 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 50
+1 < 401
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < WWW-Authenticate: Basic realm="401"
+1 < Content-Length: 24
+1 < ETag: W/"18-gH7/fIZxPCVRh6TuPVNAgHt/40I"
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"unauthorized"}
+
+01:58:25.899 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 55
+1 < 201
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 133
+1 < ETag: W/"85-tGccdkT4pOpZVbcBC5qaVm62kv4"
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"name":"Payasito.jpg","success":true,"message":"File uploaded successfully!","url":"http://localhost:5002/fileuploads/Payasito.jpg"}
+
+01:58:25.924 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.935 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/users/files.feature:16
+Then status 201
+status code was: 500, expected: 201, response time in milliseconds: 51, url: http://localhost:3000/api/upload, response: 
+{"success":false,"message":{}}
+classpath:examples/users/files.feature:16
+01:58:25.935 [pool-2-thread-2] ERROR com.intuit.karate - classpath:examples/users/auth.feature:22
+Then status 401
+status code was: 200, expected: 401, response time in milliseconds: 48, url: http://localhost:3000/api/members, response: 
+[{"id":1,"name":"Monil","gender":"Female"},{"id":2,"name":"Ramona","gender":"Female"},{"id":3,"name":"Lion","gender":"Male"},{"id":4,"name":"Shawn","gender":"Male"},{"id":5,"name":"Ravina","gender":"Female"},{"id":6,"name":"Ravina","gender":"Female"},{"id":7,"name":"sebasQa","gender":"Male"}]
+classpath:examples/users/auth.feature:22
+01:58:25.939 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/download%3F?name=Payasito.jpg
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.948 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 404
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'none'
+1 < X-Content-Type-Options: nosniff
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 154
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /api/download%3F</pre>
+</body>
+</html>
+
+
+01:58:25.951 [pool-2-thread-3] ERROR com.intuit.karate - classpath:examples/users/files.feature:41
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/api/download%3F?name=Payasito.jpg, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /api/download%3F</pre>
+</body>
+</html>
+
+classpath:examples/users/files.feature:41
+01:58:25.954 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.954 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.956 [pool-2-thread-5] ERROR com.intuit.karate - classpath:examples/users/files.feature:34
+And match response != '#empty'
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/files.feature:34
+01:58:25.956 [pool-2-thread-1] ERROR com.intuit.karate - classpath:examples/users/auth.feature:16
+And match response == '#notEmpty'
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/auth.feature:16
+01:58:25.958 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.963 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/members
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.963 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/members
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.967 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 429
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 0
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Retry-After: 20
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 90
+1 < ETag: W/"5a-t/9yHfGdyDBXrmqbvzabpvkOJ4o"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+
+01:58:25.967 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.967 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.969 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 429
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 0
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Retry-After: 20
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 90
+1 < ETag: W/"5a-t/9yHfGdyDBXrmqbvzabpvkOJ4o"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+
+01:58:25.970 [pool-2-thread-2] ERROR com.intuit.karate - classpath:examples/users/members.feature:15
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:15
+01:58:25.971 [pool-2-thread-3] ERROR com.intuit.karate - classpath:examples/users/members.feature:52
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:52
+01:58:25.975 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/members/1
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.975 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/members?gender=Female
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.976 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/api/members
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"name":"SebasQA","gender":"Male"}
+
+01:58:25.978 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.978 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.979 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 429
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 0
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Retry-After: 20
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 90
+1 < ETag: W/"5a-t/9yHfGdyDBXrmqbvzabpvkOJ4o"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+
+01:58:25.980 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 429
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 0
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Retry-After: 20
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 90
+1 < ETag: W/"5a-t/9yHfGdyDBXrmqbvzabpvkOJ4o"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+
+01:58:25.981 [pool-2-thread-5] ERROR com.intuit.karate - classpath:examples/users/members.feature:62
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 3, url: http://localhost:3000/api/members?gender=Female, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:62
+01:58:25.982 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 400
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 79
+1 < ETag: W/"4f-LgsLXv+6mz0GzBuYKQFyyUfIiFI"
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Please send request in application/json content-type format only!!!"}
+
+01:58:25.982 [pool-2-thread-1] ERROR com.intuit.karate - classpath:examples/users/members.feature:70
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members/1, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:70
+01:58:25.984 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/users/members.feature:24
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:24
+01:58:25.985 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/api/members
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 36
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","gender":"Male"}
+
+01:58:25.986 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:3000/api/members/1
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Updated Name","gender":"Male"}
+
+01:58:25.988 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.988 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.989 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 400
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 79
+1 < ETag: W/"4f-LgsLXv+6mz0GzBuYKQFyyUfIiFI"
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Please send request in application/json content-type format only!!!"}
+
+01:58:25.990 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 400
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 79
+1 < ETag: W/"4f-LgsLXv+6mz0GzBuYKQFyyUfIiFI"
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Please send request in application/json content-type format only!!!"}
+
+01:58:25.991 [pool-2-thread-2] ERROR com.intuit.karate - classpath:examples/users/members.feature:78
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 3, url: http://localhost:3000/api/members, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:78
+01:58:25.992 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:25.992 [pool-2-thread-3] ERROR com.intuit.karate - classpath:examples/users/members.feature:86
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members/1, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:86
+01:58:25.995 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:3000/api/members/1
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:25.996 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > PATCH http://localhost:3000/api/members/1
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 23
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Patched Name"}
+
+01:58:26.000 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 429
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 0
+1 < Date: Mon, 09 Dec 2024 06:58:25 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Retry-After: 20
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 90
+1 < ETag: W/"5a-t/9yHfGdyDBXrmqbvzabpvkOJ4o"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+
+01:58:26.001 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:26.001 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:26.001 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/sendheader
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > ChannelName: qa box lets test
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:26.002 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 400
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 79
+1 < ETag: W/"4f-LgsLXv+6mz0GzBuYKQFyyUfIiFI"
+1 < Date: Mon, 09 Dec 2024 06:58:26 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Please send request in application/json content-type format only!!!"}
+
+01:58:26.003 [pool-2-thread-1] ERROR com.intuit.karate - classpath:examples/users/members.feature:103
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 4, url: http://localhost:3000/api/members/1, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/members.feature:103
+01:58:26.005 [pool-2-thread-5] ERROR com.intuit.karate - classpath:examples/users/members.feature:94
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/members/1, response: 
+{"error":"Please send request in application/json content-type format only!!!"}
+classpath:examples/users/members.feature:94
+01:58:26.005 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 200
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 54
+1 < ETag: W/"36-JZS1moaeHRpL1WvDmk+MuzLCEE0"
+1 < Date: Mon, 09 Dec 2024 06:58:26 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"channelname":"You are watching  - QA BOX LETS TEST"}
+
+01:58:26.009 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/sendheader
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > channelName: qa box lets test
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:26.010 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/users/other.feature:16
+And match response != '#empty'
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/other.feature:16
+01:58:26.010 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:26.010 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:26.015 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 200
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 54
+1 < ETag: W/"36-JZS1moaeHRpL1WvDmk+MuzLCEE0"
+1 < Date: Mon, 09 Dec 2024 06:58:26 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"channelname":"You are watching  - QA BOX LETS TEST"}
+
+01:58:26.019 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/vehicles
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:26.020 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+01:58:26.020 [pool-2-thread-3] ERROR com.intuit.karate - classpath:examples/users/other.feature:32
+And match response != '#empty'
+class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+classpath:examples/users/other.feature:32
+01:58:26.023 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 200
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 377
+1 < ETag: W/"179-sK50E6hypeKNVtzw5VWhCwnmYkY"
+1 < Date: Mon, 09 Dec 2024 06:58:26 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"count":4,"vehicles":[{"id":1,"type":"Car","weight":1200,"color":"Black","tyres":4,"publicTransport":false},{"id":2,"type":"Bus","weight":10000,"color":"Yellow","tyres":6,"publicTransport":true},{"id":3,"type":"Bike","weight":200,"color":"Red","tyres":2,"publicTransport":false},{"id":4,"type":"Private Jet","weight":120000,"color":"White","tyres":0,"publicTransport":false}]}
+
+01:58:26.027 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/lag?delay=2000
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:26.027 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/authors
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:26.027 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/lag?delay=3000
+1 > Authorization: Basic YWRtaW46YWRtaW4=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:58:26.029 [pool-2-thread-5] ERROR com.intuit.karate - classpath:examples/users/other.feature:49
+And match response == '#array'
+match failed: EQUALS
+  $ | not an array or list (MAP:STRING)
+  {"count":4,"vehicles":[{"id":1,"type":"Car","weight":1200,"color":"Black","tyres":4,"publicTransport":false},{"id":2,"type":"Bus","weight":10000,"color":"Yellow","tyres":6,"publicTransport":true},{"id":3,"type":"Bike","weight":200,"color":"Red","tyres":2,"publicTransport":false},{"id":4,"type":"Private Jet","weight":120000,"color":"White","tyres":0,"publicTransport":false}]}
+  '#array'
+
+classpath:examples/users/other.feature:49
+01:58:26.033 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 429
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < X-RateLimit-Limit: 2
+1 < X-RateLimit-Remaining: 0
+1 < Date: Mon, 09 Dec 2024 06:58:26 GMT
+1 < X-RateLimit-Reset: 1733727510
+1 < Retry-After: 20
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 90
+1 < ETag: W/"5a-t/9yHfGdyDBXrmqbvzabpvkOJ4o"
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+
+01:58:26.035 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/users/other.feature:56
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/api/authors, response: 
+{"error":"Too many requests being raised from this IP, please try again after 20 Seconds"}
+classpath:examples/users/other.feature:56
+01:58:26.810 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 4 (3 remaining) classpath:examples/users/auth.feature
+01:58:26.951 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (2 remaining) classpath:examples/users/files.feature
+01:58:27.202 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 4 (1 remaining) classpath:examples/users/members.feature
+01:58:28.042 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 2015
+1 < 200
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 45
+1 < ETag: W/"2d-XNW9mcRIFeCPFF41d/NvxXcuQL8"
+1 < Date: Mon, 09 Dec 2024 06:58:28 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"msg":"Intentional Delayed Response - 2000"}
+
+01:58:29.039 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 3012
+1 < 200
+1 < X-Powered-By: QA BOX LET'S TEST
+1 < Access-Control-Allow-Origin: http://127.0.0.1:5500
+1 < Vary: Origin
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 45
+1 < ETag: W/"2d-EgEmqjjK1kboLLjR26pfN5S7Ud0"
+1 < Date: Mon, 09 Dec 2024 06:58:29 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"msg":"Intentional Delayed Response - 3000"}
+
+01:58:29.128 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 4 (0 remaining) classpath:examples/users/other.feature
